@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h1>LARAVEL 9 adminLTE</h1>
+        <ol>
+            <li>Instale laravel ultima versão</li>
+            <li>acerte o banco de dados no .env</li>
+            <li>composer require jeroennoten/laravel-adminlte</li>
+            <li>php artisan adminlte:install</li>
+            <li>composer require laravel/ui</li>
+            <li>php artisan ui vue --auth</li>
+            <li>npm install</li>
+            <li>para corrigir o erro do form plugins: [require('@tailwindcss/forms'),
+                require('@tailwindcss/typography')],
+                que esta no arquivo tailwind.config.js use esse passo abaixo
+                <p>npm install autoprefixer@10.4.5 --save-exact</p>
+            </li>
+            <li>npm run dev
+                <p>Erro : Error: Cannot find module 'webpack/lib/rules/DescriptionDataMatcherRulePlugin'</p>
+                <p>solução : npm update vue-loader e depois npm i vue-loader</p>
+            </li>
+            <li>php artisan migrate</li>
+            <li>composer require lucascudo/laravel-pt-br-localization --dev</li>
+            <li>php artisan vendor:publish --tag=laravel-pt-br-localization</li>
+            <li>alterar a localidade em config/app.php: 'locale' => 'pt-BR' e 'timezone' => 'America/Sao_Paulo'</li>
+            <li>php artisan adminlte:status</li>
+            <li>php artisan adminlte:install --only=auth_views</li>
+            <li>composer update jeroennoten/laravel-adminlte</li>
+            <li>php artisan adminlte:update</li>
+            <li>php artisan adminlte:install --only=main_views --force</li>
+            <li>php artisan adminlte:install --only=config</li>
+            <li>php artisan adminlte:install --only=translations --force</li>
+
+            Faker -> alterar em config.app = 'faker_locale' => 'pt_BR',
+        </ol>
+
+        <hr>
+        <h2>Git pela primeira vez no projeto</h2>
+
+        <ol->
+            <li>git init</li>
+            <li>git add *.*</li>
+            <li>git commit -m "nome commit"</li>
+            <li>git branch -M main</li>
+            <li>git remote add origin https://github.com/moacirx/laravel9-vue-ui.git</li>
+            <li>git push -u origin main</li>
+        </ol->
+
+        <hr>
+        <h2>Git após a primeira vez no projeto</h2>
+
+        <ol->
+            <li>git add *.*</li>
+            <li>git commit -m "nome commit"</li>
+            <li>git push -u origin main</li>
+        </ol->
+<br><br><br>
+    </div>
+</body>
+
+</html>
