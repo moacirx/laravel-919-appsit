@@ -1,0 +1,83 @@
+
+
+Instale laravel ultima versão
+acerte o banco de dados no .env
+composer require jeroennoten/laravel-adminlte
+php artisan adminlte:install
+
+composer require laravel/ui
+
+php artisan ui vue --auth
+
+npm install
+
+npm install autoprefixer@10.4.5 --save-exact
+
+npm install vue-loader@^15.9.7 --save-dev --legacy-peer-deps
+
+npm update vue-loader && npm i vue-loader
+
+
+
+npm run dev
+
+composer require lucascudo/laravel-pt-br-localization --dev
+php artisan vendor:publish --tag=laravel-pt-br-localization
+
+alterar a localidade em config/app.php:
+'locale' => 'pt-BR'
+'timezone' => 'America/Sao_Paulo'
+Faker -> alterar em config.app = 'faker_locale' => 'pt_BR',
+
+
+
+===================================================
+
+composer update
+php artisan key:generate
+alterar banco de dados
+php artisan migrate --seed
+
+
+em database/seeder/databaseSeeder.php coloque metodo run :
+
+\App\Models\User::factory(100)->create();
+
+        \App\Models\User::factory()->create([
+            'name' => 'Moacir de Oliveira',
+            'email' => 'moacir.crica@gmail.com',
+        ]);
+
+
+====================================================
+
+
+
+
+
+https://github.com/jeroennoten/Laravel-AdminLTE
+             php artisan adminlte:status
+             php artisan adminlte:install --only=auth_views
+             composer update jeroennoten/laravel-adminlte
+             php artisan adminlte:update
+             php artisan adminlte:install --only=main_views --force
+             php artisan adminlte:install --only=config
+             php artisan adminlte:install --only=translations --force
+
+
+
+        Git pela primeira vez no projeto
+
+         echo "# laravel9-traducao-ui-vue-adminlte" >> README.md
+            git init
+            git add README.md
+            git commit -m "first commit"
+            git branch -M main
+            git remote add origin https://github.com/moacirx/laravel9-traducao-ui-vue-adminlte.git
+            git push -u origin main
+
+        Git após a primeira vez no projeto
+
+        git remote add origin https://github.com/moacirx/laravel9-traducao-ui-vue-adminlte.git
+        git branch -M main
+        git push -u origin main
